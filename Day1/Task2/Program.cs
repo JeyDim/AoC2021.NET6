@@ -7,8 +7,7 @@
     return tuple;
 }
 
-Console.WriteLine(CommonFunctions.ReadFunctions.ReadAllData()
-    .TakeWhile(s => !s.Equals(string.Empty))
+Console.WriteLine(CommonFunctions.Helpers.ReadAllData()
     .Select(int.Parse)
     .Aggregate(
     (firstValue: int.MaxValue, secondValue: int.MaxValue, thirdValue: int.MaxValue, count: 0),
